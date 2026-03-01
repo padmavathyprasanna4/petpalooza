@@ -1,0 +1,211 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f4f4f4;
+}
+
+.contact-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  margin-top: 800px
+}
+
+/* Contact Us Box */
+.contact-us-box {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.contact-us-heading {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.contact-us-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contact-us-content .person-icon {
+  font-size: 30px;
+  color: #007bff;
+  margin-right: 10px;
+}
+
+.contact-us-text {
+  font-size: 16px;
+  color: #555;
+  flex: 1;
+}
+
+.sign-in-btn {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.sign-in-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Quick Links Section */
+.quick-links {
+  margin-bottom: 30px;
+}
+
+.quick-links h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+.quick-links-boxes {
+  display: flex;
+  justify-content: space-between;
+}
+
+.box {
+  background-color: #fff;
+  padding: 20px;
+  width: 30%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: background-color 0.3s ease;
+}
+
+.box:hover {
+  background-color: #f4f4f4;
+}
+
+.box .link-icon {
+  font-size: 30px;
+  color: #007bff;
+  margin-right: 10px;
+}
+
+.box .box-content {
+  text-align: left;
+  flex: 1;
+}
+
+.box h3 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.box p {
+  font-size: 14px;
+  color: #555;
+}
+
+.arrow-icon {
+  font-size: 20px;
+  color: #007bff;
+}
+
+/* Browse Topics Section */
+.browse-topics {
+  margin-bottom: 30px;
+}
+
+.browse-topics h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+.browse-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.browse-boxes .box {
+  background-color: #fff;
+  padding: 20px;
+  width: 22%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-align: left;
+  position: relative;
+  transition: background-color 0.3s ease;
+}
+
+.browse-boxes .box:hover {
+  background-color: #f4f4f4;
+}
+
+.browse-boxes .box {
+  font-size: 16px;
+  color: #333;
+}
+
+.browse-boxes .box .arrow-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: #007bff;
+}
+
+/* Get in Touch Section */
+.get-in-touch {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.get-in-touch h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  color: #333!important;
+}
+
+.get-in-touch p {
+  font-size: 16px;
+  color: #100f0f!important;
+  margin-bottom: 10px;
+}
+
+.contact-info p {
+  font-size: 14px;
+  color: #555;
+}
+
+.contact-info strong {
+  font-weight: bold;
+}
+
+.consult-page {
+  width: 100%;
+  background: #fff;
+  padding: 18px 0 60px;
+  margin-top: 835px;  /* 👈 perfect for your navbar height */
+}

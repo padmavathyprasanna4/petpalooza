@@ -1,0 +1,246 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.navbar {
+  width: 100%;
+  background-color: #1528d8;
+  font-family: "Montserrat", sans-serif;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  padding: 10px 0;
+}
+
+/* First Line */
+.navbar-top {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 20px;
+}
+
+.navbar-left .logo {
+  width: 120px;
+  height: auto;
+}
+
+.navbar-center {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar-center .search-bar {
+  width: 300px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  margin-left: 10px;
+}
+
+.navbar-right {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.navbar-right .navbar-links {
+  display: flex;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-right .navbar-links li {
+  list-style: none;
+  font-size: 16px;
+  margin-right: 20px;
+}
+
+.navbar-right .navbar-links a {
+  color: #ffffff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+/* Cart badge */
+.cart-icon {
+  position: relative;
+}
+
+.cart-icon .cart-count {
+  position: absolute;
+  top: -6px;
+  right: -12px;
+  background-color: #ffd700;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 12px;
+  font-weight: 800;
+  color: #1528d8;
+  min-width: 18px;
+  text-align: center;
+  line-height: 1;
+}
+
+/* Second Line */
+.navbar-dropdown {
+  width: 100%;
+  background-color: #1528d8;
+  padding: 10px 0;
+  margin-left: 200px;
+}
+
+.dropdown-menu {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.dropdown-menu li {
+  list-style: none;
+  font-size: 18px;
+  position: relative;
+}
+
+.dropdown-menu a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.dropdown-menu a:hover {
+  color: #ffd700;
+}
+
+.dropdown-icon {
+  margin-left: 5px;
+  font-size: 14px;
+}
+
+/* ✅ Mega Dropdown like screenshot (white bg full width) */
+.dropdown-columns.mega-menu {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 110px; /* adjust if your navbar is taller */
+  width: 100%;
+  background: #ffffff;
+  z-index: 2000;
+
+  display: grid;
+  grid-template-columns: repeat(4, minmax(200px, 1fr));
+  gap: 50px;
+
+  padding: 35px 60px;
+  border-top: 1px solid #e5e5e5;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.dropdown-columns.mega-menu .dropdown-column h3 {
+  color: #000;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.dropdown-columns.mega-menu .dropdown-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown-columns.mega-menu .dropdown-column ul li {
+  margin-bottom: 6px;
+}
+
+.dropdown-columns.mega-menu .dropdown-column ul li a {
+  color: #000;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.dropdown-columns.mega-menu .dropdown-column ul li a:hover {
+  text-decoration: underline;
+}
+
+/* ✅ small pets centered dropdown */
+.dropdown-columns.mega-menu.smallpets-menu {
+  grid-template-columns: 1fr;
+  justify-items: center;
+  text-align: left;
+}
+
+.dropdown-columns.mega-menu.smallpets-menu .dropdown-column {
+  width: 220px;
+}
+
+/* Active Link */
+.active-link {
+  color: yellow !important;
+  font-weight: bold;
+}
+/* ✅ Dog/Cat/SmallPets item layout (text + caret) */
+.dropdown-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* ✅ Make caret clickable separately */
+.caret-btn {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+.caret-btn:hover {
+  color: #ffd700;
+}
+
+/* Brand text (no navigation) */
+.brand-text {
+  color: #ffffff;
+  cursor: default;
+}
+
+/* Brand mega menu layout */
+.brand-mega-menu {
+  grid-template-columns: 1fr !important;
+  padding: 40px 80px;
+}
+
+.brand-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 30px;
+  justify-items: center;
+  align-items: center;
+}
+
+.brand-grid img {
+  width: 130px;
+  height: 70px;
+  object-fit: contain;
+  background: transparent;   /* ❌ remove box */
+  padding: 0;                /* ❌ remove spacing */
+  border-radius: 0;          /* ❌ remove rounded box */
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.brand-grid img:hover {
+  transform: scale(1.05);
+}

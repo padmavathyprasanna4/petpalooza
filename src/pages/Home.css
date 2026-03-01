@@ -1,0 +1,419 @@
+/* General Layout */
+.container {
+  max-width: 1500px;
+  margin: 0 auto;
+  margin-top: 2800px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+}
+
+.project-img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.mySwiper {
+  padding: 10px;
+}
+
+/* New Pet Image Carousel */
+.product-slider-container {
+  max-width: 1500px;
+  margin: 0 auto;
+  background-color: #ffffff; /* White Background */
+  padding: 40px 20px;
+}
+
+.carousel-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product-box {
+  text-align: center;
+  background-color: #90ee90!important; /* Light Green Background */
+  border-radius: 80px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  transition: transform 0.3s ease;
+}
+
+.product-box:hover {
+  transform: scale(1.05);
+}
+
+.product-img {
+  width: 120px;  /* Adjust size for better display */
+  height: 120px;
+  object-fit: cover;
+  border-radius: 30%;
+}
+
+.product-box p {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.swiper-button-next {
+  right: 4px;
+}
+
+.swiper-button-prev {
+  left: 10px;
+}
+
+/* Swiper Pagination Styles */
+.swiper-pagination-bullet {
+  background-color: #ff0022;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #9d0fac;
+}
+
+/* Center "Shop by Pet" Title */
+.product-title-container {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.product-title-container h2 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Hide Swiper pagination bullets (if needed) */
+.swiper-pagination {
+  display: none;
+}
+
+/* Optionally hide the autoplay indicator if it still appears */
+.swiper-autoplay {
+  display: none;
+}
+
+/* Top Rated Calming Section */
+.top-rated-calming {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #fff;
+  padding: 40px 20px;
+  margin-top: 40px;
+}
+
+.calming-left {
+  flex: 1;
+  padding: 0 20px;
+}
+
+.calming-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.calming-right {
+  flex: 2;
+  padding: 0 20px;
+}
+
+.calming-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 12px;
+}
+
+.calming-subtitle {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 24px;
+}
+
+.calming-cards {
+  display: flex;
+  gap: 20px;   /* Space between cards */
+  justify-content: flex-start;   /* Align cards horizontally */
+  flex-wrap: wrap;   /* Allow wrapping if screen size is smaller */
+}
+
+.calming-card {
+  background-color: #fff;
+  width: 160px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.calming-card:hover {
+  transform: scale(1.05);
+}
+
+.calming-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.product-name {
+  font-weight: bold;
+  font-size: 14px;
+  margin-top: 10px;
+  color: #333;
+}
+
+.product-price {
+  font-size: 16px;
+  color: #ff0000;
+  margin-top: 8px;
+}
+
+.product-rating {
+  font-size: 14px;
+  color: gold;
+  margin-top: 5px;
+
+/* Adjust layout for smaller screens */
+@media (max-width: 768px) {
+  .top-rated-calming {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .calming-left {
+    margin-bottom: 20px;
+  }
+
+  .calming-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .calming-card {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+}
+}
+
+/*Promotional Section */
+.promotional-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0061F2;
+  padding: 40px 20px;
+  margin-top: 50px;
+}
+.promo-left {
+  flex: 1;
+  color: #fff;
+  padding: 20px;
+}
+
+.promo-left h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.promo-left p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.promo-btn {
+  background-color: #fff;
+  color: #0061F2;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.promo-btn:hover {
+  background-color: #e5e5e5;
+}
+
+.promo-right {
+  flex: 1;
+  position: relative;
+}
+
+.promo-img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* Save 35% badge centered over both the left and right content */
+.save-badge {
+  position: absolute;
+  top: 40%;
+ right: 90%;
+  background-color: #fff;
+  color: #0061F2;
+  padding: 35px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* General Layout */
+.promo-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #90ee90; /* Light Green */
+  padding: 20px;
+  margin-top: 50px;
+  position: relative; /* Needed for centering the image */
+}
+
+.promo-notes {
+  flex: 1;
+  text-align: center;
+  color: #333;
+}
+
+.promo-text {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.promo-image {
+  flex: 1;
+  display: flex;
+  justify-content: center; /* Center the image */
+}
+
+.food-img {
+  width: 150px; /* Adjust size to fit the design */
+  height: auto;
+  border-radius: 8px;
+}
+
+.promo-btn-container {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.food-btn {
+  background-color: #0061F2;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.promo-btn:hover {
+  background-color: #004bbf;
+}
+
+/* General Layout for Pet Services Section */
+.pet-services {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.pet-services h2 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.pet-services p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/* Grid for the service cards */
+.service-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+/* Each Service Card */
+.service-card {
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.service-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 2px solid #ddd;
+}
+
+.service-details {
+  padding: 20px;
+}
+
+.service-details h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.service-details p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.service-btn {
+  width: 100%;  /* Full width */
+  background-color: #0061F2;
+  color: white;
+  font-weight: bold;
+  padding: 15px 0;  /* Vertical padding */
+  border: none;
+  border-radius: 0 0 10px 10px; /* Rounded bottom corners */
+  cursor: pointer;
+  margin-top: auto; /* Push button to bottom */
+}
+
+.service-btn:hover {
+  background-color: #004bbf;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .service-cards {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .service-cards {
+    grid-template-columns: 1fr; /* 1 column on very small screens */
+  }
+}

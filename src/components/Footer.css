@@ -1,0 +1,220 @@
+/* Ensure html and body take up full width and height */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#root {
+  width: 100%; /* Ensure that React root container takes full width */
+}
+
+/* Full-width footer */
+.footer {
+  background-color: #2130b7;
+  color: white;
+  padding: 40px 0;
+  font-family: 'Montserrat', sans-serif;
+  width: 100vw; /* Force full viewport width */
+  position: relative;
+  bottom: 0;
+}
+
+/* Footer content styles */
+.footer-content {
+  display: flex;
+  justify-content: center;   /* remove large spread */
+  gap: 0px;                 /* smaller gap */
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-logo {
+  flex: 1;
+  text-align: left;
+}
+
+.footer-logo h1 {
+  font-size: 24px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.footer-menu a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.footer-menu a:hover {
+  text-decoration: underline;
+}
+
+/* Footer Links Section */
+.footer-links {
+  display: flex;
+  gap: 10px;     /* reduce from 40px */
+  flex: 3;
+}
+
+.footer-category, .footer-support, .footer-follow, .footer-subscribe {
+  flex: 1;
+  text-align: left;
+}
+
+.footer-category h3, .footer-support h3, .footer-follow h3, .footer-subscribe h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  display: block;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+/* Social icons */
+.social-icons a {
+  display: inline-block;
+  color: #ffffff;
+  margin: 0 10px;
+  font-size: 16px;
+}
+
+.footer-subscribe input {
+  padding: 10px;
+  margin-right: 10px;
+  width: 72%;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+.footer-subscribe button {
+  padding: 10px;
+  background-color: #ffffff;
+   width: 72%;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.footer-subscribe button:hover {
+  background-color: #ffffff;
+}
+
+/* Footer bottom */
+.footer-bottom {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.footer-content p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+/* Social icons container */
+.social-icons {
+  display: flex;
+  gap: 5px;
+  margin-top: 10px;
+}
+
+/* Individual icon */
+.social-icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  background: #ffffff;
+  color: #003366;
+  border-radius: 50%;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.social-icons a:hover {
+  background: white;
+  color: #003366;
+  transform: scale(1.1);
+}
+
+
+/* Separate logo row */
+.footer-top-logo {
+  text-align: left;
+  max-width: 1200px;
+  margin: 0 auto 25px auto;
+}
+
+.footer-top-logo img {
+  width: 80px; /* adjust size if needed */
+}
+
+/* Adjust spacing so columns sit properly below logo */
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 1px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ✅ Add these ONLY (keep your existing CSS as final) */
+
+/* ✅ FIX: Get in Touch should be normal text (NO BOX) */
+.get-in {
+  margin-top: 14px;
+  background: transparent !important;
+  border: none !important;
+  padding: 0 !important;
+  width: auto !important;
+  height: auto !important;
+  box-shadow: none !important;
+}
+
+.get-in h4 {
+  margin: 10px 0 6px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.get-in p {
+  margin: 2px 0;
+  font-size: 13px;
+  color: #ffffff!important;
+}
+
+/* Replace link styling with span styling */
+.footer-menu span,
+.footer-category span,
+.footer-support span {
+  display: block;
+  color: #ffffff;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+/* Remove hover effects (since no links) */
+.footer-menu span:hover,
+.footer-category span:hover,
+.footer-support span:hover {
+  text-decoration: none;
+  cursor: default;
+}
