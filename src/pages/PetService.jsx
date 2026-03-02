@@ -1,5 +1,5 @@
 import React from "react";
-import "./Petservice.css";
+import "./PetService.css";
 
 // HERO IMAGES
 import leftDog from "../assets/petservice1.png";   // change if needed
